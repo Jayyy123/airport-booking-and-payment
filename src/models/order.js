@@ -6,10 +6,6 @@ dotenv.config();
 const order = sequelize.define(
       "order",
       {
-  
-        id  : {
-            type:DataTypes.INTEGER,
-        },
         from_airport : {
             type:DataTypes.STRING
         },

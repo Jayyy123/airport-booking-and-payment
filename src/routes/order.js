@@ -16,5 +16,12 @@ router.get('/:id',async (request,response)=>{
         "order":data
     })
 })
+router.post('/',async (request,response)=>{
+    let data = order.create()
+    response.json({
+        "message":"success",
+        "order":data
+    })
+})
 
 module.exports = router;
