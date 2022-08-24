@@ -1,0 +1,24 @@
+<%- include('./partials/head.ejs') %> 
+<div class="core">
+    <main id="main">
+    </main>  
+    <form id="form"><input type="text" id="search" placeholder="Search Weather By Loaction" autocomplete="off">  
+   </form>  
+</div>
+<div class="airports">
+    <div class="airport">
+        <form id="airport-form"><input type="text" id="country" placeholder="Filter Airports By Country Code" autocomplete="off">  
+       </form>  
+       <div class="airport1"></div> 
+    </div>
+    <div class="to-airport">
+        <form id="to-airport-form"><input type="text" id="to-country" placeholder="Filter Destination Airports By Country Code" autocomplete="off"> 
+            <div class="airport2"></div> 
+       </form>  
+    </div>
+</div>
+<button class="proceed" onclick="getDistance()">Continue</button>
+<div class="final">
+
+</div>
+<%- include('./partials/footer.ejs') %> 
