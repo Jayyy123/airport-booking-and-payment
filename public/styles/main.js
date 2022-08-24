@@ -138,11 +138,13 @@ async function getDistance(){
         proceed.style.visibility = 'hidden';
         final.innerHTML = `
         <h3 class="center">Total Price is $${distance * 10}</h5>
-        <button onclick="pay()" class="pay">Pay -></button>
+        <button onclick=pay(${distance * 10}) class="pay">Pay -></button>
         `
     }
 }
 
-const pay = () => {
-    window.location.href = "https://paystack.com/pay/mkairportss";
+const pay = (d) => {
+    // window.location.href = "https://paystack.com/pay/mkairportss";
+    alert(d)
+    window.location.href = "http://localhost:4001/pay?amount=" + d ;
 }

@@ -1,0 +1,24 @@
+<%- include('./partials/head.ejs') %> 
+<table>
+    <caption>Successful Order</caption>
+    <thead>
+      <tr>
+        <th><!-- Intentionally Blank --></th>
+        <th>From Airport</th>
+        <th>To Airport</th>
+        <th>From Country</th>
+        <th>To Country</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= from_a %> </td>
+        <td><%= to_a %> </td>
+        <td><%= from_c %></td>
+        <td><%= to_c %></td>
+        <td><%= amount %></td>
+      </tr>
+    </tbody>
+  </table>
+<%- include('./partials/footer.ejs') %> 
