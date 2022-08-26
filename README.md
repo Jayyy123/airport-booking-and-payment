@@ -1,4 +1,4 @@
-# node_task
+# airport booking
 1. Clone repo into your github
 2. Use https://expressjs.com/
 3. Use this library to connect to mysql https://sequelize.org/
